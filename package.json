@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Mike Siu",
   "license": "ISC",
@@ -12,5 +13,8 @@
     "express": "^4.16.3",
     "firebase-admin": "^5.13.1",
     "nodemon": "^1.18.3"
+  },
+  "engines": {
+    "node": "10.x.x"
   }
 }
