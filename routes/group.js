@@ -26,7 +26,7 @@ module.exports = (app) => {
       group: group,
     });
     // add to group
-    groupReference.child(`${group}/members/${user}`).set(true);
+    groupReference.child(`${group}/members/${user}`).set({coordinates: false});
     if (data.isAdmin) {
       groupReference.child(`${group}/admininstrators/${user}`).set(true);
     }
